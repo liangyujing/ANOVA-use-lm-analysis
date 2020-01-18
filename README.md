@@ -8,9 +8,10 @@ levels(picture) # show levels
 describeBy(manipulation_check, 
            group = picture)
 
-# 2 Compute the analysis of variance  !!!!!!!!!!1
+# 2 Compute the analysis of variance
 mod0 <- aov(manipulation_check ~ picture)
 summary(mod0)
+
 ## significantly different
 
 # 3 post-hoc test  
@@ -21,6 +22,7 @@ plot(posthoc)
 ```
 
 
+###Rmarkdown
 ```{r descriptives, include = FALSE}
 descriptives <- describeBy(Simulated_Data$Acceptance, 
            group = Simulated_Data$picture)
@@ -58,5 +60,3 @@ fstat_plcon <- sum_plcon[[1]][, 4]
 df_plcon <- sum_plcon[[1]][, 1]
 
 ``` 
-
-```{r spearman correlation for each condition, in

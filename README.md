@@ -1,3 +1,5 @@
+```{R}
+
 ## the analysis of variance is performed in R by fitting a linear model 
 # define factors 
 str(Simulated_Data)
@@ -60,3 +62,4 @@ fstat_plcon <- sum_plcon[[1]][, 4]
 df_plcon <- sum_plcon[[1]][, 1]
 
 ``` 
+```
